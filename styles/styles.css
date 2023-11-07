@@ -49,7 +49,7 @@ h3 {
     color: white;
 }
 
-button, label {
+button{
     font-family: inherit;
     font-weight: bold;
     background-color: #87f630;
@@ -60,6 +60,12 @@ button, label {
     width: fit-content;
 }
 
-button:hover, label:hover {
+button:hover{
     background-color: #77de28;
+}
+
+label {
+    font-size: 1.2rem;
+    color: white;
+    display: block;
 }
