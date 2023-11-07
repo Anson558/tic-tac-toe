@@ -28,13 +28,15 @@
                 <button id="o-name-submit">Submit</button>
             </div>
         </section>
+        <button id=start-game-button>Start New Game</button>
         <section id="game">
+            <p id="player-turn">It's your turn, <span id="player-turn-name">PLAYER NAME</span></p>
             <ol id="game-board">
-                <li data-col="1" data-row="1" class="disabled">X</li>
+                <li data-col="1" data-row="1"></li>
                 <li data-col="2" data-row="1"></li>
-                <li data-col="3" data-row="1" class="disabled">X</li>
+                <li data-col="3" data-row="1"></li>
 
-                <li data-col="1" data-row="2" class="disabled">O</li>
+                <li data-col="1" data-row="2"></li>
                 <li data-col="2" data-row="2"></li>
                 <li data-col="3" data-row="2"></li>
 
@@ -42,6 +44,7 @@
                 <li data-col="2" data-row="3"></li>
                 <li data-col="3" data-row="3"></li>
             </ol>
+            <h2 id="announce-winner"><span id="winner-name">PLAYER NAME</span> Wins!</h2>
         </section>
     </div>
 </body>

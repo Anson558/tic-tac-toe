@@ -3,5 +3,9 @@
 }
 
 #game-config div {
-    margin: 1rem 1.5rem;
+    margin: 1rem 0.5rem;
+}
+
+#start-game-button {
+    display: none;
 }
