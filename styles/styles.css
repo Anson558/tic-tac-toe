@@ -58,6 +58,7 @@ button{
     border: none;
     display: block;
     width: fit-content;
+    color: black;
 }
 
 button:hover{
@@ -70,8 +71,8 @@ label, p {
     display: block;
 }
 
-input:focus {
-    zoom: 100%;
+input {
+    font-size: 1.2rem;
 }
 
 #player-turn-name {
