@@ -5,7 +5,7 @@ function resetGame() {
     announceWinnerElement.innerHTML =
         'You won, <span id="winner-name">PLAYER NAME</span>!';
     announceWinnerElement.style.display = 'none';
-    playerNameElement.textContent = playerData[activePlayer - 1].name;
+    playerNameElement.textContent = playerData[activePlayer - 1].symbol;
 
     let gameBoardIndex = 0;
     for (let i = 0; i < 3; i++) {
@@ -20,11 +20,8 @@ function resetGame() {
 }
 
 function startGame() {
-    if (xNameEntered && oNameEntered) {
-        resetGame();
-        playerTurnElement.style.display = 'block'
-        gameBoard.style.display = 'grid'
-    }
+    resetGame();
+    playerTurnElement.style.display = 'block'
 }
 
 function switchPlayer() {
@@ -33,7 +30,7 @@ function switchPlayer() {
     } else if (activePlayer == 2) {
         activePlayer = 1;
     }
-    playerNameElement.textContent = playerData[activePlayer - 1].name;
+    playerNameElement.textContent = playerData[activePlayer - 1].symbol;
 }
 
 function selectGameTile(event) {
@@ -112,7 +109,7 @@ function checkForGameOver() {
 function endGame(winnerId) {
     announceWinnerElement.style.display = 'block';
     if (winnerId > 0) {
-        announceWinnerElement.innerHTML =  'You won, <span id="winner-name">' + playerData[winnerId - 1].name + '</span>!';
+        announceWinnerElement.innerHTML =  'You won, <span id="winner-name">' + playerData[winnerId - 1].symbol + '</span>!';
     } else if (winnerId < 0) {
         announceWinnerElement.innerHTML = "It's a Draw!";
     }
