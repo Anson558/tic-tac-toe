@@ -15,7 +15,7 @@ const playerData = [
 
 let activePlayer = 1;
 let currentRound = 1;
-let gameEnded = false;
+let gameEnded = true;
 
 //game
 const startGameButton = document.getElementById('start-game-button');
