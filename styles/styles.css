@@ -1,8 +1,8 @@
 /*
 #87f630; green
 #77de28; dark green
-#ff5e89; red
-#d63e5a; dark red
+#ff799d; red
+#f22f46; dark red
 #1e2021; dark grey
 */
 
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #d63e5a;
+    background-color: #f22f46;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
     font-family: Cubano;
-    background-color: #ff5e89;
+    background-color: #ff799d;
     width: fit-content;
     padding: 0.8rem 1.3rem;
     border-radius: 50px;
