@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/game.css">
 </head>
 <body>
     <div id="site-container">
@@ -12,22 +14,22 @@
         <section id="game-config">
             <div>
                 <h2>X</h2>
-                <h3>PLAYER NAME</h3>
-                <button>Edit Name</button>
+                <input id="player-1-name" name="player-1-name">
+                <label for="player-1-name">Edit Name</label>
             </div>
             <div>
                 <h2>O</h2>
-                <h3>PLAYER NAME</h3>
-                <button>Edit Name</button>
+                <input id="player-2-name" name="player-2-name">
+                <label for="player-2-name">Edit Name</label>
             </div>
         </section>
         <section id="game">
             <ol id="game-board">
-                <li data-col="1" data-row="1"></li>
+                <li data-col="1" data-row="1" class="disabled">X</li>
                 <li data-col="2" data-row="1"></li>
-                <li data-col="3" data-row="1"></li>
+                <li data-col="3" data-row="1" class="disabled">X</li>
 
-                <li data-col="1" data-row="2"></li>
+                <li data-col="1" data-row="2" class="disabled">O</li>
                 <li data-col="2" data-row="2"></li>
                 <li data-col="3" data-row="2"></li>
 

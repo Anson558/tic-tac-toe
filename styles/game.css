@@ -1,0 +1,36 @@
+#game-board {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: 0.7rem;
+    margin-left: 0;
+    padding: 0;
+    background-color: black;
+    padding: 0.7rem;
+}
+
+#game-board li {
+    font-family: Cubano;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: scale 0.15s;
+    margin: 0;
+}
+
+#game-board li:hover {
+    background-color: #77de28;
+    scale: 105%;
+}
+
+#game-board li.disabled {
+    background-color: #77de28;
+    scale: 100%;
+    cursor: default;
+}

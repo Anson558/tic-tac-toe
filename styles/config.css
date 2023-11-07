@@ -1,0 +1,7 @@
+#game-config {
+    display: flex;
+}
+
+#game-config div {
+    margin: 1rem 1.5rem;
+}
