@@ -13,7 +13,6 @@
 
 body {
     background-color: #d63e5a;
-    color: #1e2021;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -27,6 +26,7 @@ body {
 
 * {
     margin: 0.5rem auto;
+    color: #1e2021;
 }
 
 h1 {
@@ -69,10 +69,6 @@ label, p {
     font-size: 1.2rem;
     color: white;
     display: block;
-}
-
-input {
-    font-size: 1.2rem;
 }
 
 #player-turn-name {
