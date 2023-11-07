@@ -70,6 +70,10 @@ label, p {
     display: block;
 }
 
+input:focus {
+    zoom: 100%;
+}
+
 #player-turn-name {
     color: #87f630;
     font-weight: bold;

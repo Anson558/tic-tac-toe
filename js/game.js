@@ -39,23 +39,25 @@ function switchPlayer() {
 function selectGameTile(event) {
     if (gameEnded === false) {
         const selectedTile = event.target;
-        selectedTile.textContent = playerData[activePlayer - 1].symbol;
-        selectedTile.classList.add('disabled');
-    
-        const tileRow = selectedTile.dataset.row;
-        const tileCol = selectedTile.dataset.col;
-    
-        gameData[tileRow - 1][tileCol - 1] = activePlayer;
-    
-        winnerId = checkForGameOver();
-        console.log(winnerId);
-    
-        if (winnerId != 0) {
-            endGame(winnerId);
+        if (!selectedTile.classList.contains('disabled')) {
+            selectedTile.textContent = playerData[activePlayer - 1].symbol;
+            selectedTile.classList.add('disabled');
+        
+            const tileRow = selectedTile.dataset.row;
+            const tileCol = selectedTile.dataset.col;
+        
+            gameData[tileRow - 1][tileCol - 1] = activePlayer;
+        
+            winnerId = checkForGameOver();
+            console.log(winnerId);
+        
+            if (winnerId != 0) {
+                endGame(winnerId);
+            }
+        
+            switchPlayer();
+            currentRound += 1;
         }
-    
-        switchPlayer();
-        currentRound += 1;
     }
 }
 
