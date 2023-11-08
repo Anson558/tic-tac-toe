@@ -2,10 +2,9 @@
     list-style: none;
     grid-template-columns: 6rem 6rem 6rem;
     grid-template-rows: 6rem 6rem 6rem;
-    gap: 0.7rem;
+    gap: 0.8rem;
     margin-left: 0;
     padding: 0;
-    background-color: black;
     padding: 0.7rem;
     display: grid;
 }
@@ -29,12 +28,14 @@
 }
 
 #game-board li:hover {
-    background-color: #77de28;
-    scale: 105%;
+    background-color: #69adc2;
+    background-color: #55bcf7;
+    scale: 106%;
 }
 
 #game-board li.disabled {
-    background-color: #77de28;
+    background-color: #69adc2;
+    background-color: #55bcf7;
     scale: 100%;
     cursor: default;
 }

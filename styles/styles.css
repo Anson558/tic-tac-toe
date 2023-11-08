@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #f22f46;
+    background-color: #13191c;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
     font-family: Cubano;
-    background-color: #ff799d;
+    background-color: white;
     width: fit-content;
     padding: 0.8rem 1.3rem;
     border-radius: 50px;
@@ -52,7 +52,7 @@ h3 {
 button{
     font-family: inherit;
     font-weight: bold;
-    background-color: #87f630;
+    background-color: #55bcf7;
     padding: 0.3rem 0.6rem;
     font-size: 1.2rem;
     border: none;
@@ -62,7 +62,7 @@ button{
 }
 
 button:hover{
-    background-color: #77de28;
+    background-color: #4ba5da;
 }
 
 label, p {
@@ -72,7 +72,7 @@ label, p {
 }
 
 #player-turn-name {
-    color: #87f630;
+    color: #55bcf7;
     font-weight: bold;
     font-size: 1.6rem;
 }
