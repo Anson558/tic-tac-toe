@@ -13,12 +13,16 @@
     display: none;
 }
 
+#player-turn-name {
+    font-weight: bold;
+}
+
 #game-board li {
     font-family: Cubano;
     width: 100%;
     height: 100%;
-    background-color: white;
-    color: black;
+    background-color: var(--secondary-color);
+    color: white;
     font-size: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -28,14 +32,10 @@
 }
 
 #game-board li:hover {
-    background-color: #69adc2;
-    background-color: #55bcf7;
     scale: 106%;
 }
 
 #game-board li.disabled {
-    background-color: #69adc2;
-    background-color: #55bcf7;
     scale: 100%;
     cursor: default;
 }
